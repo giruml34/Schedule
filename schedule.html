@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Driver Schedule | Ride Scheduler</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <a class="logo" href="index.html">
+      Ride Scheduler
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="drivers.html">Drivers</a>
+      <a href="schedule.html">Schedule</a>
+    </nav>
+
+  </header>
+
+
+  <main class="page-container">
+
+    <div class="schedule-heading">
+
+      <div>
+
+        <p class="eyebrow">
+          Driver Dashboard
+        </p>
+
+        <h1>Booking Schedule</h1>
+
+        <p>
+          Choose a driver to view their upcoming rides.
+        </p>
+
+      </div>
+
+
+      <div class="schedule-controls">
+
+        <label for="driverFilter">
+          Driver
+        </label>
+
+        <select id="driverFilter">
+
+          <option value="Girum">
+            Girum
+          </option>
+
+          <option value="Samuel">
+            Samuel
+          </option>
+
+          <option value="Michael">
+            Michael
+          </option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+
+    <section
+      id="scheduleList"
+      class="schedule-list"
+    ></section>
+
+  </main>
+
+
+  <footer>
+    <p>Ride Scheduler</p>
+  </footer>
+
+
+  <script src="js/schedule.js"></script>
+
+</body>
+</html>
