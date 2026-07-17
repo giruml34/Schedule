@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Book a Driver | Ride Scheduler</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <a class="logo" href="index.html">
+      Ride Scheduler
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="drivers.html">Drivers</a>
+      <a href="schedule.html">Schedule</a>
+    </nav>
+
+  </header>
+
+
+  <main class="page-container">
+
+    <section class="form-wrapper">
+
+      <div class="page-heading">
+
+        <p class="eyebrow">
+          New Reservation
+        </p>
+
+        <h1>Book a Driver</h1>
+
+        <p>
+          Complete the form below to add your ride to the
+          driver's schedule.
+        </p>
+
+      </div>
+
+
+      <div
+        id="message"
+        class="message hidden"
+      ></div>
+
+
+      <form id="bookingForm" class="booking-form">
+
+        <div class="form-group">
+
+          <label for="driver">
+            Driver
+          </label>
+
+          <select id="driver" required>
+
+            <option value="">
+              Choose a driver
+            </option>
+
+            <option value="Girum">
+              Girum
+            </option>
+
+            <option value="Samuel">
+              Samuel
+            </option>
+
+            <option value="Michael">
+              Michael
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="passengerName">
+            Passenger Name
+          </label>
+
+          <input
+            type="text"
+            id="passengerName"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="phone">
+            Phone Number
+          </label>
+
+          <input
+            type="tel"
+            id="phone"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="pickup">
+            Pickup Location
+          </label>
+
+          <input
+            type="text"
+            id="pickup"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="destination">
+            Destination
+          </label>
+
+          <input
+            type="text"
+            id="destination"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="form-group">
+
+            <label for="date">
+              Pickup Date
+            </label>
+
+            <input
+              type="date"
+              id="date"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="time">
+              Pickup Time
+            </label>
+
+            <input
+              type="time"
+              id="time"
+              required
+            >
+
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="notes">
+            Notes
+          </label>
+
+          <textarea
+            id="notes"
+            rows="4"
+            placeholder="Optional information"
+          ></textarea>
+
+        </div>
+
+
+        <button
+          class="button full-width"
+          type="submit"
+        >
+          Submit Booking
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>Ride Scheduler</p>
+  </footer>
+
+
+  <script src="js/booking.js"></script>
+
+</body>
+</html>
